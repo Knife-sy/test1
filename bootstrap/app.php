@@ -1,5 +1,6 @@
 <?php
 
+require __DIR__.'/helpers.php';
 /*
 |--------------------------------------------------------------------------
 | Create The Application
@@ -10,6 +11,7 @@
 | the IoC container for the system binding all of the various parts.
 |
 */
+
 
 $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
@@ -25,7 +27,6 @@ $app = new Illuminate\Foundation\Application(
 | incoming requests to this application from both the web and CLI.
 |
 */
-require __DIR__.'/helpers.php';
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
