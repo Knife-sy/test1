@@ -15,7 +15,7 @@ class StatusPolicy
      *
      * @return void
      */
-    use HandlesAuthorization;
+
 
     public function __construct()
     {
